@@ -11,6 +11,19 @@ export interface montrex {
 
   pointe?: string;
 }
+export interface montrer {
+  boitier?: string;
+  boitier_rond?: string;
+  ecran?: string;
+
+  braceletr_t?: string;
+  braceletr_b?: string;
+
+  cercler_in?: string;
+  cercler_ex?: string;
+
+  
+}
 export const colors = {
   "#9F7550": "Marron",
   "#FFD700": "Jaune",

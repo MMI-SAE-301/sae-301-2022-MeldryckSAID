@@ -1,9 +1,9 @@
 <template>
   <main class="m-0 min-h-screen bg-mclair">
     <section>
-      <h1 class="font-montagu-slab">ici on personalise</h1>
+      <h1 class="font-montagu-slab">ici on personalise la montre en rond</h1>
       <div class="flex justify-around">
-        <Montrex v-bind:="montre" />
+       <Montrer v-bind="montre"></Montrer>
 
         <div>
           <FormKit
@@ -24,25 +24,22 @@
                 <FormKit name="ecran" label="Écran" type="color" />
               </div>
               <div class="flex flex-col">
-                <FormKitListColors name="bracelet_t" label="Lanniere haute" />
-                <FormKit name="bracelet_t" label="Lanniere haute" type="color" />
+                <FormKitListColors name="braceletr_t" label="Lanniere haute" />
+                <FormKit name="braceletr_t" label="Lanniere haute" type="color" />
               </div>
               <div class="flex flex-col">
-                <FormKitListColors name="bracelet_b" label="Lanniere basse" />
-                <FormKit name="bracelet_b" label="Lanniere basse" type="color" />
+                <FormKitListColors name="braceletr_b" label="Lanniere basse" />
+                <FormKit name="braceletr_b" label="Lanniere basse" type="color" />
               </div>
               <div class="flex flex-col">
-                <FormKitListColors name="cercle_in" label="cercle intérieur" />
-                <FormKit name="cercle_in" label="cercle intérieur" type="color" />
+                <FormKitListColors name="cercler_in" label="cercle intérieur" />
+                <FormKit name="cercler_in" label="cercle intérieur" type="color" />
               </div>
               <div class="flex flex-col">
-                <FormKitListColors name="cercle_ex" label="cercle extérieur" />
-                <FormKit name="cercle_ex" label="cercle extérieur" type="color" />
+                <FormKitListColors name="cercler_ex" label="cercle extérieur" />
+                <FormKit name="cercler_ex" label="cercle extérieur" type="color" />
               </div>
-              <div class="flex flex-col">
-                <FormKitListColors name="pointe" label="Pointe" />
-                <FormKit name="pointe" label="Pointe" type="color" />
-              </div>
+             
             </div>
           </FormKit>
         </div>
@@ -52,27 +49,27 @@
 </template>
 
 <script setup lang="ts">
-import Montrex from "@/components/Montrex.vue";
+import Montrer from "@/components/Montrer.vue";
 import { ref } from "vue";
 
 import FormKitListColors from "../components/FormkitColors.vue";
 
 
-import type { montrex } from "@/type";
+import type { montrer } from "@/type";
 
 import { supabase } from "@/supabase";
 import { useRouter } from "vue-router";
 
 const router = useRouter();
 
-const montre = ref<montrex>({});
+const montre = ref<montrer>({});
 const props = defineProps<{
-  data?: montrex;
+  data?: montrer;
   id?: string;
 }>();
 
 async function upsertMontre(dataForm, node) {
-  const { data, error } = await supabase.from("montre").upsert(dataForm);
+  const { data, error } = await supabase.from("montrer").upsert(dataForm);
   if (error) node.setErrors([error.message]);
   else {
     node.setErrors([]);

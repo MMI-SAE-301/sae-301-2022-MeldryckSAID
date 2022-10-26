@@ -15,8 +15,15 @@
        </div>
       
       <div class="flex items-center justify-around"> 
+
+        <router-link class="text-black px-5  font-montagu-slab font-bold text-2xl " to="/test">
+            test
+          </router-link>
           <router-link class="text-black px-5 font-montagu-slab font-bold text-2xl " to="/personalisation">
             personalisation
+          </router-link>
+          <router-link class="text-black px-5 font-montagu-slab font-bold text-2xl " to="/personalisationr">
+            rond
           </router-link>
        
           <router-link class="text-black px-5  font-montagu-slab font-bold text-2xl " to="/produit">
