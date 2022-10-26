@@ -4,7 +4,22 @@ const formKitTailwind = require("@formkit/themes/tailwindcss");
 module.exports = {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        Marron: "#9f7550",
+        blanc: "#ffffff",
+        mclair: "#ffe3ca",
+        black: "#000000",
+      },
+      fontSize: {
+        base: "0.875rem",
+        lg: "1.25rem",
+      },
+      fontFamily: {
+        "modern-no.-20": "Modern No. 20",
+        arial: "Arial",
+      },
+    },
   },
   plugins: [
     require("@tailwindcss/typography"),
