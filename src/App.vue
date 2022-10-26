@@ -15,6 +15,7 @@
           </router-link>
         </li>
       </ul>
+      
       <ul>
         <li>
           <router-link class="text-black underline" to="/personalisation">
@@ -30,6 +31,11 @@
         <li>
           <router-link class="text-black underline" to="/liste">
             Ma liste
+          </router-link>
+        </li>
+        <li>
+          <router-link class="text-black underline" to="/connexion">
+            Conexion
           </router-link>
         </li>
       </ul>
