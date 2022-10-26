@@ -16,7 +16,7 @@ module.exports = {
         lg: "1.25rem",
       },
       fontFamily: {
-        modern: "Modern No. 20",
+        "montagu-slab": "Montagu Slab",
         arial: "Arial",
       },
     },

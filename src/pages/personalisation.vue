@@ -1,13 +1,13 @@
 <template>
   <main class="min-h-screen bg-mclair m-0">
     <section>
-      <h1>ici on personalise</h1>
+      <h1 class="font-montagu-slab">ici on personalise</h1>
       <div class="flex justify-around">
         <svgface v-bind:="montre" />
 
         <div>
           <FormKit type="form"  v-model="montre" @submit="upsertMontre">
-            <div class="flex space-x-8">
+            <div class="flex  space-x-8">
               
               <FormKitListColors name="ecran" label="ecran" />
               <FormKitListColors name="bracelet_t" label="bracelet_t" />

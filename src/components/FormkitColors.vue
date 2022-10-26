@@ -13,17 +13,22 @@ defineProps<{
     value="#FFFFFF"
     type="radio"
     :options="colors"
+    :submit-attrs="{
+      classes: {
+        input:
+          'bg-green-600',
+      },
+    }"
     :sections-schema="{
       inner: { $el: null },
       decorator: { $el: null },
     }"
-    input-class="peer sr-only"
-    option-class="flex gap-1"
-    label-class="text-red-900 text-center "
+    input-class="peer sr-only "
+    option-class="flex gap-1 "
   >
     <template #label="context">
       <div
-        class="h-6 w-6 rounded-full border-2 peer-checked:border-red-500 text-center font-modern"
+        class="font-modern h-6 w-6 rounded-full border-2 text-center peer-checked:border-red-500"
         :style="{ backgroundColor: context.option.value }"
       ></div>
       <span class="sr-only">{{ context.option.value }}</span>
