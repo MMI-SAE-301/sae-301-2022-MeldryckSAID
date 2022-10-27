@@ -3,7 +3,7 @@
     <div class="mx-4 flex items-center">
       <img
         class="w-24"
-        src="src/assets/image/Logo_dark.svg"
+        src="/src/assets/image/Logo_dark.svg"
         alt="Logo TIK TAK"
       />
     </div>
@@ -28,7 +28,7 @@
         département MMI de Montbéliard
       </h4>
 
-      <img class="w-24" src="src/assets/image/logo_mmi.png" alt="Logo MMi" />
+      <img class="w-24" src="/src/assets/image/logo_mmi.png" alt="Logo MMi" />
     </div>
   </footer>
 </template>

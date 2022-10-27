@@ -95,8 +95,9 @@ if (props.id) {
   else montre.value = (data as any[])[0];
 }
 
+// @ts-ignore
 async function upsertMontre(dataForm, node) {
-  dataForm.id_user = supabase.auth.user().id;
+  // dataForm.id_user = supabase.auth.user().id;
   const { data, error } = await supabase.from("montrec").upsert(dataForm);
   if (error) node.setErrors([error.message]);
   else {

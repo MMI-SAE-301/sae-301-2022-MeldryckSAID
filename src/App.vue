@@ -3,7 +3,7 @@
     <div class="flex justify-around">
       <router-link class="text-black" to="/">
         <div class="mx-4 flex items-center">
-          <img class="w-12" src="src/assets/image/Logo_tiktak.svg" alt="Logo TIK TAK" />
+          <img class="w-12" src="/src/assets/image/Logo_tiktak.svg" alt="Logo TIK TAK" />
           <h1 class="mx-2 font-montagu-slab text-2xl font-bold text-Marron">
             Tik TAK
           </h1>
@@ -40,7 +40,7 @@
         class="px-5 "
         to="/connexion"
       >
-        <img src="src/assets/image/user.svg" alt="User" />
+        <img src="/src/assets/image/user.svg" alt="User" />
       </router-link>
     </div>
   </header>
