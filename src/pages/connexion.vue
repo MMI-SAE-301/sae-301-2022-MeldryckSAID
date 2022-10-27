@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { supabase, user } from "@/supabase";
+import Foter from "@/components/foter.vue";
 </script>
 
 <template>
@@ -52,4 +53,7 @@ import { supabase, user } from "@/supabase";
       </div>
     </div>
   </main>
+  <footer>
+    <Foter></Foter>
+  </footer>
 </template>

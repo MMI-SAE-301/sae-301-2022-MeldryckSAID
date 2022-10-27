@@ -66,10 +66,14 @@
       </div>
     </div>
   </main>
+  <footer>
+    <Foter></Foter>
+  </footer>
 </template>
 
 <script setup lang="ts">
 import Bouton from "@/components/bouton.vue";
+import Foter from "@/components/foter.vue";
 import Montrec from "@/components/Montrec.vue";
 import Montrer from "@/components/Montrer.vue";
 import Montrex from "@/components/Montrex.vue";

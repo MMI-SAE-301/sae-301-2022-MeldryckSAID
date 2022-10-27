@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import Foter from "@/components/foter.vue";
 import Bouton from "@/components/bouton.vue";
 import Montrec from "@/components/Montrec.vue";
 import Montrer from "@/components/Montrer.vue";
@@ -31,4 +32,7 @@ import Montrex from "@/components/Montrex.vue";
       </div>
     </div>
   </main>
+  <footer>
+    <Foter></Foter>
+  </footer>
 </template>
