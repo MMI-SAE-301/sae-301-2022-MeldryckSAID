@@ -29,7 +29,7 @@ defineProps<{
   >
     <template #label="context">
       <img
-        class="h-10 w-10 rounded-full border-2 peer-checked:border-red-600"
+        class="h-8 w-8 rounded-full border-2 peer-checked:border-red-600"
         :src="context.option.img"
         :alt="context.option.label"
       />

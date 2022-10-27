@@ -62,6 +62,9 @@
       </div>
     </section>
   </main>
+  <footer>
+    <Foter></Foter>
+  </footer>
 </template>
 
 <script setup lang="ts">
@@ -69,6 +72,9 @@ import Montrec from "@/components/Montrec.vue";
 import { ref } from "vue";
 
 import FormKitListColors from "../components/FormkitColors.vue";
+import FormkitMateriaux from "@/components/FormkitMateriaux.vue";
+
+import Foter from "@/components/foter.vue";
 
 import type { montrec } from "@/type";
 
@@ -84,6 +90,7 @@ const props = defineProps<{
 }>();
 
 async function upsertMontre(dataForm, node) {
+  dataForm.id_user = supabase.auth.user().id;
   const { data, error } = await supabase.from("montrec").upsert(dataForm);
   if (error) node.setErrors([error.message]);
   else {

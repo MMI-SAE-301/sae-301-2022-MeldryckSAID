@@ -56,7 +56,7 @@ export const materiaux = [
   },
   {
     value: "d4583c12-c4aa-45b6-b128-b25f05ee62ad",
-    img: "/materiaux/acier.jpg",
+    img: "/materiaux/plastique.jpg",
     label: "plastique",
   },
 ];
