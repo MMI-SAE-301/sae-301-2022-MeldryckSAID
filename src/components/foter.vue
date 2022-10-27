@@ -1,7 +1,11 @@
 <template>
-  <footer class="  flex h-60 items-center justify-around bg-black">
+  <footer class="flex h-60 items-center justify-around bg-black">
     <div class="mx-4 flex items-center">
-      <img class="w-24" src="public/Logo_dark.svg" alt="Logo TIK TAK" />
+      <img
+        class="w-24"
+        src="src/assets/image/Logo_dark.svg"
+        alt="Logo TIK TAK"
+      />
     </div>
     <div class="flex flex-col">
       <h4 class="mx-2 font-montagu-slab text-2xl font-bold text-blanc">
@@ -24,7 +28,7 @@
         département MMI de Montbéliard
       </h4>
 
-      <img class="w-24" src="public/logo_mmi.png" alt="Logo MMi" />
+      <img class="w-24" src="src/assets/image/logo_mmi.png" alt="Logo MMi" />
     </div>
   </footer>
 </template>

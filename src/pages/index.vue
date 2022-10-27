@@ -3,7 +3,7 @@
     <figure class="flex flex-col items-center justify-center text-center">
       <img
         class="flex max-w-xl"
-        src="public/exemple.png"
+        src="src/assets/image/exemple.png"
         alt="exemple de montre"
       />
 

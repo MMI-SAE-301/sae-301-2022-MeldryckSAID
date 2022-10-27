@@ -20,7 +20,7 @@ Vous avez rendu à la racine du projet :
 ## R312 | Intégrer ([Pierre Pracht : AC 2401](https://moodle.univ-fcomte.fr/mod/assign/view.php?id=612668))
 
 Pour les liens :
-[vers des fichiers](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes#relative-links-and-image-paths-in-readme-files) ou page d'un commit sur Github.
+[vers des fichiers](https://github.com/MMI-SAE-301/sae-301-2022-MeldryckSAID) ou page d'un commit sur Github.
 
 Noté sur 40.
 
@@ -41,6 +41,8 @@ Noté sur 40.
     config. Tailwind (eg. before/after avec content, background...))
     - ...
   - liens
+  https://github.com/MMI-SAE-301/sae-301-2022-MeldryckSAID/commit/6986147a5afaf4f133c2ad70ebf4f8f2476ef38b
+  https://github.com/MMI-SAE-301/sae-301-2022-MeldryckSAID/commit/9fd2552da2857c4e08597c738446b091c99efd8f
 - Mise en page CSS (0-1-2pts)
   - Quelles techniques (Grilles Flex...)
     - ...
@@ -59,6 +61,6 @@ Noté sur 40.
     - liens
 - Composants "accessibles" (0-1-2pts)
   - [x] textes "accessibles" (eg. 'sr-only')
-  - [ ] Contenu accessible ET Usage de composants étudié pour accessibilité (Eg. HeadlessUI)
+  - [x] Contenu accessible ET Usage de composants étudié pour accessibilité (Eg. HeadlessUI)
 
 [^1]: Supprimez les mentions inutiles.

@@ -46,17 +46,17 @@ export const colors = {
 export const materiaux = [
   {
     value: "ece9b013-f979-49a9-ae29-9a16491a9891",
-    img: "/materiaux/acier.jpg",
+    img: "src/assets/materiaux/acier.jpg",
     label: "acier",
   },
   {
     value: "6359dc1f-3926-4f25-ae46-c101e7b39166",
-    img: "/materiaux/bois.jpg",
+    img: "src/assets/materiaux/bois.jpg",
     label: "bois",
   },
   {
     value: "d4583c12-c4aa-45b6-b128-b25f05ee62ad",
-    img: "/materiaux/plastique.jpg",
+    img: "src/assets/materiaux/plastique.jpg",
     label: "plastique",
   },
 ];
