@@ -12,11 +12,11 @@
             v-model="montre"
             @submit="upsertMontre"
             :submit-attrs="{
-            classes: {
-              input:
-                ' bg-Marron text-white p-1 rounded-xl hover:bg-white hover:text-black',
-            },
-          }"
+              classes: {
+                input:
+                  ' bg-Marron text-white p-1 rounded-xl hover:bg-white hover:text-black',
+              },
+            }"
           >
             <div class="flex space-x-8">
               <div class="flex flex-col">
@@ -25,25 +25,42 @@
               </div>
               <div class="flex flex-col">
                 <FormKitListColors name="bracelet_t" label="Lanniere haute" />
-                <FormKit name="bracelet_t" label="Lanniere haute" type="color" />
+                <FormKit
+                  name="bracelet_t"
+                  label="Lanniere haute"
+                  type="color"
+                />
               </div>
               <div class="flex flex-col">
                 <FormKitListColors name="bracelet_b" label="Lanniere basse" />
-                <FormKit name="bracelet_b" label="Lanniere basse" type="color" />
+                <FormKit
+                  name="bracelet_b"
+                  label="Lanniere basse"
+                  type="color"
+                />
               </div>
               <div class="flex flex-col">
                 <FormKitListColors name="cercle_in" label="cercle intérieur" />
-                <FormKit name="cercle_in" label="cercle intérieur" type="color" />
+                <FormKit
+                  name="cercle_in"
+                  label="cercle intérieur"
+                  type="color"
+                />
               </div>
               <div class="flex flex-col">
                 <FormKitListColors name="cercle_ex" label="cercle extérieur" />
-                <FormKit name="cercle_ex" label="cercle extérieur" type="color" />
+                <FormKit
+                  name="cercle_ex"
+                  label="cercle extérieur"
+                  type="color"
+                />
               </div>
               <div class="flex flex-col">
                 <FormKitListColors name="pointe" label="Pointe" />
                 <FormKit name="pointe" label="Pointe" type="color" />
               </div>
             </div>
+            <FormkitMateriaux name="id_materiaux" label="Materiaux" />
           </FormKit>
         </div>
       </div>
@@ -56,7 +73,6 @@ import Montrex from "@/components/Montrex.vue";
 import { ref } from "vue";
 
 import FormKitListColors from "../components/FormkitColors.vue";
-
 
 import type { montrex } from "@/type";
 

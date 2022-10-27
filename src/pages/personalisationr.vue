@@ -3,7 +3,7 @@
     <section>
       <h1 class="font-montagu-slab">ici on personalise la montre en rond</h1>
       <div class="flex justify-around">
-       <Montrer v-bind="montre"></Montrer>
+        <Montrer v-bind="montre"></Montrer>
 
         <div>
           <FormKit
@@ -12,11 +12,11 @@
             v-model="montre"
             @submit="upsertMontre"
             :submit-attrs="{
-            classes: {
-              input:
-                ' bg-Marron text-white p-1 rounded-xl hover:bg-white hover:text-black',
-            },
-          }"
+              classes: {
+                input:
+                  ' bg-Marron text-white p-1 rounded-xl hover:bg-white hover:text-black',
+              },
+            }"
           >
             <div class="flex space-x-8">
               <div class="flex flex-col">
@@ -25,22 +25,38 @@
               </div>
               <div class="flex flex-col">
                 <FormKitListColors name="braceletr_t" label="Lanniere haute" />
-                <FormKit name="braceletr_t" label="Lanniere haute" type="color" />
+                <FormKit
+                  name="braceletr_t"
+                  label="Lanniere haute"
+                  type="color"
+                />
               </div>
               <div class="flex flex-col">
                 <FormKitListColors name="braceletr_b" label="Lanniere basse" />
-                <FormKit name="braceletr_b" label="Lanniere basse" type="color" />
+                <FormKit
+                  name="braceletr_b"
+                  label="Lanniere basse"
+                  type="color"
+                />
               </div>
               <div class="flex flex-col">
                 <FormKitListColors name="cercler_in" label="cercle intérieur" />
-                <FormKit name="cercler_in" label="cercle intérieur" type="color" />
+                <FormKit
+                  name="cercler_in"
+                  label="cercle intérieur"
+                  type="color"
+                />
               </div>
               <div class="flex flex-col">
                 <FormKitListColors name="cercler_ex" label="cercle extérieur" />
-                <FormKit name="cercler_ex" label="cercle extérieur" type="color" />
+                <FormKit
+                  name="cercler_ex"
+                  label="cercle extérieur"
+                  type="color"
+                />
               </div>
-             
             </div>
+            <FormkitMateriaux name="id_materiaux" label="Materiaux" />
           </FormKit>
         </div>
       </div>
@@ -54,11 +70,11 @@ import { ref } from "vue";
 
 import FormKitListColors from "../components/FormkitColors.vue";
 
-
 import type { montrer } from "@/type";
 
 import { supabase } from "@/supabase";
 import { useRouter } from "vue-router";
+import FormkitMateriaux from "@/components/FormkitMateriaux.vue";
 
 const router = useRouter();
 

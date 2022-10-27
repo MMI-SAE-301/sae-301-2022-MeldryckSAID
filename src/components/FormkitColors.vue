@@ -15,8 +15,7 @@ defineProps<{
     :options="colors"
     :submit-attrs="{
       classes: {
-        input:
-          'bg-green-600',
+        input: 'bg-green-600',
       },
     }"
     :sections-schema="{
