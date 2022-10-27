@@ -18,23 +18,58 @@
       personnalisation. Et ce en quelques click.
     </h2>
     <div>
-      <div><h1 class="ml-4 font-montagu-slab font-extrabold text-2xl">Editions Standar</h1></div>
+      <div>
+        <h1 class="ml-4 font-montagu-slab text-2xl font-extrabold">
+          Editions Standar
+        </h1>
+      </div>
+
+      <div class="flex justify-evenly">
+        <div class="flex flex-col items-center">
+          <Montrex />
+        </div>
+        <div class="flex flex-col items-center">
+          <Montrer />
+        </div>
+        <div class="flex flex-col items-center">
+          <Montrec />
+        </div>
+      </div>
+      <div class=" flex justify-end pl-8">
+        <RouterLink to="/personalisation">
+          <Bouton>Commencer à personaliser</Bouton>
+        </RouterLink>
+      </div>
     </div>
-    <div class="flex justify-evenly">
-      <div class="flex flex-col items-center">
-        <Montrex />
+     <div>
+      <div>
+        <h1 class="ml-4 font-montagu-slab text-2xl font-extrabold">
+          Editions Spéciale
+        </h1>
       </div>
-      <div class="flex flex-col items-center">
-        <Montrer />
+
+      <div class="flex justify-evenly">
+        <div class="flex flex-col items-center">
+          <Montrex />
+        </div>
+        <div class="flex flex-col items-center">
+          <Montrer />
+        </div>
+        <div class="flex flex-col items-center">
+          <Montrec />
+        </div>
       </div>
-      <div class="flex flex-col items-center">
-        <Montrec />
+      <div class=" flex justify-end pl-8">
+        <RouterLink to="/personalisation">
+          <Bouton>Commencer à personaliser</Bouton>
+        </RouterLink>
       </div>
     </div>
   </main>
 </template>
 
 <script setup lang="ts">
+import Bouton from "@/components/bouton.vue";
 import Montrec from "@/components/Montrec.vue";
 import Montrer from "@/components/Montrer.vue";
 import Montrex from "@/components/Montrex.vue";
