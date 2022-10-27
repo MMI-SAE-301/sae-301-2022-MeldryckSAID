@@ -25,6 +25,42 @@ FOREIGN KEY (id_materiaux) REFERENCES materiaux (id_materiaux),
 FOREIGN KEY (id_user) REFERENCES auth.users (id) 
 );
 
+--montre ronde
+
+CREATE TABLE montrec ( 
+id_montre uuid default uuid_generate_v4(), 
+ecranc varchar, 
+
+braceletc_t varchar,
+braceletc_b varchar,
+carrer_in varchar,
+carrer_ex varchar,
+commande bool, 
+id_materiaux uuid, 
+id_user uuid , 
+PRIMARY KEY (id_montre), 
+FOREIGN KEY (id_materiaux) REFERENCES materiaux (id_materiaux),
+FOREIGN KEY (id_user) REFERENCES auth.users (id) 
+);
+
+
+-- montre carrer
+
+CREATE TABLE montrer ( 
+id_montre uuid default uuid_generate_v4(), 
+ecranr varchar, 
+boitier_rond varchar,
+braceletr_t varchar,
+braceletr_b varchar,
+cercler_in varchar,
+cercler_ex varchar,
+commande bool, 
+id_materiaux uuid, 
+id_user uuid , 
+PRIMARY KEY (id_montre), 
+FOREIGN KEY (id_materiaux) REFERENCES materiaux (id_materiaux),
+FOREIGN KEY (id_user) REFERENCES auth.users (id) 
+);
 
 
 

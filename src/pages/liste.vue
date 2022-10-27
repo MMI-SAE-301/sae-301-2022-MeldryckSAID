@@ -5,7 +5,11 @@
       v-for="montrex in MesMontre"
       :key="montrex.id_montre"
     >
-      <div v-for="montrex in MesMontre" :key="MesMontre.id_montre">
+      <div
+        v-for="montrex in MesMontre"
+        :key="MesMontre.id_montre"
+        
+      >
         <Montrex v-bind="montrex" class="w-32" />
       </div>
     </RouterLink>
@@ -14,7 +18,11 @@
       v-for="montrer in MesMontre"
       :key="montrer.id_montre"
     >
-      <div v-for="montrer in MesMontrer" :key="MesMontrer.id_montre">
+      <div
+        v-for="montrer in MesMontrer"
+        :key="MesMontrer.id_montre"
+
+      >
         <Montrer v-bind="montrer" class="w-32" />
       </div>
     </RouterLink>
@@ -23,9 +31,13 @@
       v-for="montrec in MesMontrec"
       :key="montrec.id_montre"
     >
-      <div v-for="montrec in MesMontrec" :key="MesMontrec.id_montre">
-        <Montrec v-bind="montrec" class="w-32" />
-      </div>
+    <div
+      v-for="montrec in MesMontrec"
+      :key="MesMontrec.id_montre"
+     
+    >
+      <Montrec v-bind="montrec" class="w-32" />
+    </div>
     </RouterLink>
   </main>
   <footer>
@@ -37,7 +49,7 @@
 import Foter from "@/components/foter.vue";
 
 import type { montrex } from "@/type";
-import type { montrer } from "@/type";
+import type {  montrer } from "@/type";
 import type { montrec } from "@/type";
 
 import Montrer from "@/components/Montrer.vue";
@@ -54,24 +66,31 @@ const MesMontrec = ref();
 const MesMontrer = ref();
 
 async function getMontre() {
-  const { error, data } = await supabase.from("montre").select("*");
-
+  const { error, data } = await supabase
+    .from("montre")
+    .select("*")
+    
   console.log(data);
   MesMontre.value = data;
 }
 async function getMontrec() {
-  const { error, data } = await supabase.from("montrec").select("*");
-
+  const { error, data } = await supabase
+    .from("montrec")
+    .select("*")
+    
   console.log(data);
   MesMontrec.value = data;
 }
 async function getMontrer() {
-  const { error, data } = await supabase.from("montrer").select("*");
-
+  const { error, data } = await supabase
+    .from("montrer")
+    .select("*")
+   
   console.log(data);
   MesMontrer.value = data;
 }
-getMontrer();
-getMontre();
-getMontrec();
+getMontrer()
+getMontre()
+getMontrec()
+
 </script>

@@ -94,12 +94,12 @@ const props = defineProps<{
 }>();
 
 async function upsertMontre(dataForm, node) {
-    dataForm.id_user = supabase.auth.user().id;
+  dataForm.id_user = supabase.auth.user().id;
   const { data, error } = await supabase.from("montre").upsert(dataForm);
   if (error) node.setErrors([error.message]);
   else {
     node.setErrors([]);
-    router.push({ name: "edit-id", params: { id: data[0].id } });
+    router.push("/liste");
   }
 }
 </script>
