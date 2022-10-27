@@ -3,7 +3,7 @@
     <section>
       <h1 class="font-montagu-slab">ici on personalise la montre en rond</h1>
       <div class="flex justify-around">
-       <Montrer v-bind="montre"></Montrer>
+       <Montrec v-bind="montre"></Montrec>
 
         <div>
           <FormKit
@@ -20,24 +20,24 @@
           >
             <div class="flex space-x-8">
               <div class="flex flex-col">
-                <FormKitListColors name="ecranr" label="Écran" />
-                <FormKit name="ecranr" label="Écran" type="color" />
+                <FormKitListColors name="ecranc" label="Écran" />
+                <FormKit name="ecranc" label="Écran" type="color" />
               </div>
               <div class="flex flex-col">
-                <FormKitListColors name="braceletr_t" label="Lanniere haute" />
-                <FormKit name="braceletr_t" label="Lanniere haute" type="color" />
+                <FormKitListColors name="braceletc_t" label="Lanniere haute" />
+                <FormKit name="braceletc_t" label="Lanniere haute" type="color" />
               </div>
               <div class="flex flex-col">
-                <FormKitListColors name="braceletr_b" label="Lanniere basse" />
-                <FormKit name="braceletr_b" label="Lanniere basse" type="color" />
+                <FormKitListColors name="braceletc_b" label="Lanniere basse" />
+                <FormKit name="braceletc_b" label="Lanniere basse" type="color" />
               </div>
               <div class="flex flex-col">
-                <FormKitListColors name="cercler_in" label="cercle intérieur" />
-                <FormKit name="cercler_in" label="cercle intérieur" type="color" />
+                <FormKitListColors name="carrer_in" label="Carrer intérieur" />
+                <FormKit name="carrer_in" label="Carrer intérieur" type="color" />
               </div>
               <div class="flex flex-col">
-                <FormKitListColors name="cercler_ex" label="cercle extérieur" />
-                <FormKit name="cercler_ex" label="cercle extérieur" type="color" />
+                <FormKitListColors name="carrer_ex" label="cercle extérieur" />
+                <FormKit name="carrer_ex" label="Carrer extérieur" type="color" />
               </div>
              
             </div>
@@ -49,27 +49,27 @@
 </template>
 
 <script setup lang="ts">
-import Montrer from "@/components/Montrer.vue";
+import Montrec from "@/components/Montrec.vue";
 import { ref } from "vue";
 
 import FormKitListColors from "../components/FormkitColors.vue";
 
 
-import type { montrer } from "@/type";
+import type { montrec } from "@/type";
 
 import { supabase } from "@/supabase";
 import { useRouter } from "vue-router";
 
 const router = useRouter();
 
-const montre = ref<montrer>({});
+const montre = ref<montrec>({});
 const props = defineProps<{
-  data?: montrer;
+  data?: montrec;
   id?: string;
 }>();
 
 async function upsertMontre(dataForm, node) {
-  const { data, error } = await supabase.from("montrer").upsert(dataForm);
+  const { data, error } = await supabase.from("montrec").upsert(dataForm);
   if (error) node.setErrors([error.message]);
   else {
     node.setErrors([]);

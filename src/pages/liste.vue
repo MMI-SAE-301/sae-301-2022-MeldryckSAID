@@ -1,8 +1,5 @@
 <template>
-     <main class="min-h-screen bg-mclair m-0">
-
-     </main>
+  <main class="m-0 min-h-screen bg-mclair"></main>
 </template>
 
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>

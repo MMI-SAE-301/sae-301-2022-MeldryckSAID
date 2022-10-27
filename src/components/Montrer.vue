@@ -4,7 +4,7 @@ import type { montrer } from "@/type";
 withDefaults(defineProps<montrer>(), {
   
   boitier_rond: "white",
-  ecran: "white",
+  ecranr: "white",
 
   bracelet: "white",
   braceletr_t: "white",
@@ -82,9 +82,9 @@ withDefaults(defineProps<montrer>(), {
           </g>
           <path
             id="ecran"
-            class="ecran"
+            class="ecranr"
             d="M106.998 180.391C142.181 180.391 170.702 151.727 170.702 116.368C170.702 81.0093 142.181 52.3455 106.998 52.3455C71.8157 52.3455 43.2944 81.0093 43.2944 116.368C43.2944 151.727 71.8157 180.391 106.998 180.391Z"
-            :fill="ecran"
+            :fill="ecranr"
             stroke="black"
             stroke-width="0.5"
             stroke-miterlimit="10"

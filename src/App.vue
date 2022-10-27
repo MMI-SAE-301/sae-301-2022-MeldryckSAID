@@ -1,30 +1,28 @@
 <template>
-  <header class="bg-blanc flex justify-between">
+  <header class="bg-blanc flex justify-between ">
    
       <div class="flex  justify-around">
           <router-link class="text-black " to="/">
-            <div class="flex items-center">
+            <div class="flex items-center mx-4">
               <img
-                class="w-8"
+                class="w-12"
                 src="public/Logo_tiktak.svg"
                 alt="Logo TIK TAK"
               />
-              <h1 class="font-montagu-slab font-bold text-Marron text-2xl">Tik TAK</h1>
+              <h1 class="font-montagu-slab font-bold text-Marron text-2xl mx-2">Tik TAK</h1>
             </div>
           </router-link>
        </div>
       
       <div class="flex items-center justify-around"> 
 
-        <router-link class="text-black px-5  font-montagu-slab font-bold text-2xl " to="/test">
+        <!-- <router-link class="text-black px-5  font-montagu-slab font-bold text-2xl " to="/test">
             test
+          </router-link> -->
+          <router-link class="text-black px-5 font-montagu-slab font-bold text-2xl " to="/persoindex">
+            Personalisation
           </router-link>
-          <router-link class="text-black px-5 font-montagu-slab font-bold text-2xl " to="/personalisation">
-            personalisation
-          </router-link>
-          <router-link class="text-black px-5 font-montagu-slab font-bold text-2xl " to="/personalisationr">
-            rond
-          </router-link>
+          
        
           <router-link class="text-black px-5  font-montagu-slab font-bold text-2xl " to="/produit">
             Produit
