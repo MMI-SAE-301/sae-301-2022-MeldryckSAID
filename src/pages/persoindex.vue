@@ -11,7 +11,7 @@ import Montrex from "@/components/Montrex.vue";
     <h1 class="py-4 text-center font-montagu-slab font-bold text-2xl">
       Choisissez la montre que vous souhaitez personnaliser
     </h1>
-    <div class="flex justify-evenly ">
+    <div class="flex justify-evenly my-20 ">
       <div class="flex flex-col items-center">
         <Montrex />
         <RouterLink to="/personalisation">

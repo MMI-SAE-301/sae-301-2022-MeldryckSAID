@@ -36,7 +36,7 @@
         </div>
       </div>
       <div class=" flex justify-end pl-8">
-        <RouterLink to="/personalisation">
+        <RouterLink to="/persoindex">
           <Bouton>Commencer à personaliser</Bouton>
         </RouterLink>
       </div>
@@ -60,7 +60,7 @@
         </div>
       </div>
       <div class=" flex justify-end pl-8">
-        <RouterLink to="/personalisation">
+        <RouterLink to="/persoindex">
           <Bouton>Commencer à personaliser</Bouton>
         </RouterLink>
       </div>
