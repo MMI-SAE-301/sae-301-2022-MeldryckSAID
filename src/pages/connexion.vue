@@ -6,7 +6,7 @@ import { supabase, user } from "@/supabase";
   <main class="min-h-screen bg-mclair">
     <div class="flex justify-center">
       <div
-        class=" my-5 flex h-2/3 w-3/5 flex-col items-center rounded-lg bg-Marron p-20"
+        class="my-5 flex h-2/3 w-3/5 flex-col items-center rounded-lg bg-Marron p-20"
       >
         <div v-if="user">
           <span class="font-bold">{{ user.email }}</span> vous êtes connecté(e)
@@ -43,6 +43,12 @@ import { supabase, user } from "@/supabase";
         >
           Se connecter avec Facebook
         </button>
+        <FormKit
+          type="checkbox"
+          label="J'accepte les conditions générales et la politique de confidentialité"
+          validation="accepted"
+          class="text-white"
+        />
       </div>
     </div>
   </main>
