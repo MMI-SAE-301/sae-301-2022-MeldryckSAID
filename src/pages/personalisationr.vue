@@ -85,10 +85,16 @@ import { useRouter } from "vue-router";
 const router = useRouter();
 
 const montre = ref<montrer>({});
-const props = defineProps<{
-  data?: montrer;
-  id?: string;
-}>();
+
+const props = defineProps(["id"]);
+if (props.id) {
+  let { data, error } = await supabase
+    .from("montrer")
+    .select("*")
+    .eq("id_montre", props.id);
+  if (error) console.log("n'a pas pu charger le table montre :", error);
+  else montre.value = (data as any[])[0];
+}
 
 async function upsertMontre(dataForm, node) {
     dataForm.id_user = supabase.auth.user().id;
@@ -96,7 +102,7 @@ async function upsertMontre(dataForm, node) {
   if (error) node.setErrors([error.message]);
   else {
     node.setErrors([]);
-    router.push({ name: "edit-id", params: { id: data[0].id } });
+    router.push("/liste");
   }
 }
 </script>

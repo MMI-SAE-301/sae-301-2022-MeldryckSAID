@@ -95,7 +95,7 @@ async function upsertMontre(dataForm, node) {
   if (error) node.setErrors([error.message]);
   else {
     node.setErrors([]);
-    router.push({ name: "edit-id", params: { id: data[0].id } });
+    router.push("/liste");
   }
 }
 </script>
