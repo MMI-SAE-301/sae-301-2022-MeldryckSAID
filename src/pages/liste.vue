@@ -21,17 +21,7 @@
         v-for="montrec in MesMontrec"
         :key="montrec.id_montre"
       >
-        <div v-for="montrec in MesMontrec" :key="MesMontrec.id_montre">
-          <Montrec v-bind="montrec" class="w-32" />
-
-          <!-- <router-link :to="{
-            name: 'montre-edit-id',
-            params: { id: montrec.id_montre },
-          }" >  <button>Modifier</button> </router-link>
-        <router-link  :to="{
-            name: 'montre-sup-id',
-            params: { id: montrec.id_montre }, }" > <button>Supprimer</button>  </router-link> -->
-        </div>
+        <Montrec v-bind="montrec" class="w-32" />
       </RouterLink>
     </div>
   </main>
